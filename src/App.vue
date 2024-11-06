@@ -1,17 +1,20 @@
 <template>
   <div>
     <h1>Titulo estatico de la app</h1>
-    <hr/>
-    <router-view></router-view>
-    <hr/>
+      <MenuComponent/>
+      <hr/>
+        <router-view></router-view>
+      <hr/>
     </div>
 </template>
 
 <script>
+import MenuComponent from './components/MenuComponent.vue';
+
 export default {
   name: 'App',
   components: {
-
+    MenuComponent
   }
 }
 </script>
